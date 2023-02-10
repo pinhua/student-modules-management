@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CRUD Operations for Modules</title>
+        <script src="./index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>CRUD Operations for Modules</h1>
+
+        <form id="module-form">
+            <fieldset>
+                <input type="text" id="module-code" placeholder="Module Code" />
+                <input type="number" id="module-credit" placeholder="Module Credit" />
+                <button type="submit">Add Module</button>
+            </fieldset>
+        </form>
+        <br />
+        <table id="modules-table">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Credit</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="modules-body"></tbody>
+        </table>
+        <template id="template">
+            <tr>
+                <td class="code"></td>
+                <td>
+                    <input type="number" class="credit" />
+                </td>
+                <td>
+                    <button class="update">Update</button>
+                </td>
+                <td>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+        </template>
+    </body>
+</html>

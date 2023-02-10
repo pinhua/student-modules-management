@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CRUD Operations for Students Modules</title>
+        <script src="./index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>CRUD Operations for Students Modules</h1>
+
+        <form id="student-module-form">
+            <fieldset>
+                <input type="number" id="student-id" placeholder="Student Id" />
+                <input type="text" id="module-code" placeholder="Module Code" />
+                <input type="text" id="grade" placeholder="Grade" />
+                <button type="submit">Add Student Module</button>
+            </fieldset>
+        </form>
+        <br />
+        <table id="students-table">
+            <thead>
+                <tr>
+                    <th>Student Id</th>
+                    <th>Student Name</th>
+                    <th>Module Code</th>
+                    <th>Module Credit</th>
+                    <th>Grade</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="student-modules-body"></tbody>
+        </table>
+        <template id="template">
+            <tr>
+                <td class="student-id"></td>
+                <td class="student-name"></td>
+                <td class="module-code"></td>
+                <td class="module-credit"></td>
+                <td>
+                    <input type="text" class="grade" />
+                </td>
+                <td>
+                    <button class="update">Update</button>
+                </td>
+                <td>
+                    <button class="delete">Delete</button>
+                </td>
+            </tr>
+        </template>
+    </body>
+</html>
